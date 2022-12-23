@@ -1,0 +1,51 @@
+.hidden{
+    color: transparent;
+}
+
+body{
+    background-color: #217810;
+    color: #fff ;
+    /* COMENTARIO*/
+    font-family : 'SF Pixelate', sans-serif;
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    display: flex;
+    flex-direction : column ;
+    justify-content : center ;
+    align-items : center;  
+};
+
+#wordcontainer {
+    margin-top: 20px;
+}
+
+.letter {
+    margin: 0 7px ;
+    position: relative;
+    text-align: center;
+}
+
+.letter::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    min-width: 12px;
+}
+
+button#starButton {
+    margin-top: 20px;
+    appearance: none;
+    /* font-family: 'SF Pixelate', sans-serif ; */
+    border: none;
+    width: 300px;
+    padding: 10px;
+    background: #7103a3;
+    color: #fff;
+    font-weight: 1000;
+    font-size: 20px;
+    border-radius: 13px;
+    cursor: pointer;
+}
